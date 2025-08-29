@@ -20,7 +20,7 @@ import { toast } from "react-toastify";
     },
     {
       key: "gallery",
-      title: "Gallery",
+      title: "Project Gallery",
       icon: "Images",
       path:"/gallery"
     },
@@ -32,7 +32,7 @@ import { toast } from "react-toastify";
     },
     {
       key: "team",
-      title: "Team",
+      title: "Our Team",
       icon: "UsersRound",
       path:"/team"
     },
@@ -41,6 +41,25 @@ import { toast } from "react-toastify";
       title: "Inquiry",
       icon: "CircleUser",
       path:"/inquiry"
+    },
+
+    {
+      key: "visitor",
+      title: "Website Visitor",
+      icon: "Eye",
+      path:"/visitor"
+    },
+    {
+      key: "subscriber",
+      title: "News Latter Subscribers",
+      icon: "Mails",
+      path:"/subscriber"
+    },
+    {
+      key: "job",
+      title: "Job Application",
+      icon: "Dock",
+      path:"/job-application"
     },
    
     

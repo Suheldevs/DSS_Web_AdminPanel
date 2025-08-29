@@ -15,6 +15,9 @@ import BlogForm from "./pages/blog/BlogForm";
 import ProductForm from "./pages/product/ProductFrom";
 import GalleryForm from "./pages/gallery/GalleryForm";
 import TeamForm from "./pages/team/TeamForm";
+import VisitorDashboard from "./pages/visitor/VisitorDashboard";
+import SubscriberDashboard from "./pages/subscribers/SubscriberDashboard";
+import JobDashboard from "./pages/job/JobDahboard";
 function App() {
   return (
     <>
@@ -36,6 +39,9 @@ function App() {
       <Route path="/team/add" element={<TeamForm/>}/>
       <Route path="/team/update/:id" element={<TeamForm/>}/>
       <Route path="/inquiry" element={<InquiryDashboard/>}/>
+      <Route path="/visitor" element={<VisitorDashboard/>}/>
+      <Route path="/subscriber" element={<SubscriberDashboard/>}/>
+      <Route path="/job-application" element={<JobDashboard/>}/>
       </Route>
     </Routes>
     </>

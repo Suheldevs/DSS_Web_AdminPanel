@@ -9,6 +9,9 @@ import { productApi } from '../api/product.api.js';
 import { galleryApi } from '../api/gallery.api.js';
 import { teamApi } from '../api/team.api.js';
 import { inquiryApi } from '../api/inquiry.api.js';
+import { visitorApi } from '../api/visitor.api.js';
+import { subscriberApi } from '../api/subscriber.api.js';
+import { jobApi } from '../api/job.api.js';
 const persistConfig = {
   key: 'root',
   storage,
@@ -22,6 +25,9 @@ const rootReducer = combineReducers({
   [galleryApi.reducerPath]: galleryApi.reducer,
   [teamApi.reducerPath]: teamApi.reducer,
   [inquiryApi.reducerPath]: inquiryApi.reducer,
+  [visitorApi.reducerPath]: visitorApi.reducer,
+  [subscriberApi.reducerPath]: subscriberApi.reducer,
+  [jobApi.reducerPath]: jobApi.reducer,
 });
 
 
@@ -31,7 +37,7 @@ export const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: false, 
-    }).concat(authApi.middleware, blogApi.middleware, productApi.middleware, galleryApi.middleware, teamApi.middleware ,inquiryApi.middleware),
+    }).concat(authApi.middleware, blogApi.middleware, productApi.middleware, galleryApi.middleware, teamApi.middleware ,inquiryApi.middleware, visitorApi.middleware, subscriberApi.middleware, jobApi.middleware),
   devTools: import.meta.env.VITE_MODE !== 'Pro',
 });
 
