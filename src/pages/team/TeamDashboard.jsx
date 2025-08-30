@@ -35,7 +35,7 @@ function TeamDashboard() {
               onClick={async () => {
                 try {
                   await deleteTeam({ id }).unwrap();
-                  setRows((prev) => prev.filter((row) => row._id !== id));
+                  // setRows((prev) => prev.filter((row) => row._id !== id));
                   toast.success("Team member deleted successfully");
                 } catch (err) {
                   toast.error("Failed to delete member");

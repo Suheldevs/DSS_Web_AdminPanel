@@ -31,7 +31,7 @@ function BlogDashboard() {
               onClick={async () => {
                 try {
                   await deleteBlog({ id }).unwrap();
-                  setRows((prev) => prev.filter((row) => row._id !== id));
+                  // setRows((prev) => prev.filter((row) => row._id !== id));
                   toast.success("Blog deleted successfully");
                 } catch (err) {
                   toast.error("Failed to delete blog");

@@ -33,7 +33,7 @@ console.log(data)
               onClick={async () => {
                 try {
                   await deleteSubscriber({ id }).unwrap();
-                  setRows((prev) => prev.filter((row) => row._id !== id));
+                  // setRows((prev) => prev.filter((row) => row._id !== id));
                   toast.success("Subscriber deleted successfully");
                 } catch (err) {
                   toast.error("Failed to delete subscriber");

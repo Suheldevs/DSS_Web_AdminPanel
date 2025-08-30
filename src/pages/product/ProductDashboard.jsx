@@ -35,7 +35,7 @@ function ProductDashboard() {
               onClick={async () => {
                 try {
                   await deleteProduct({ id }).unwrap();
-                  setRows((prev) => prev.filter((row) => row._id !== id));
+                  // setRows((prev) => prev.filter((row) => row._id !== id));
                   toast.success("Product deleted successfully");
                 } catch (err) {
                   toast.error("Failed to delete product");

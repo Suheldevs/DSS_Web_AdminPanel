@@ -34,7 +34,7 @@ function GalleryDashboard() {
               onClick={async () => {
                 try {
                   await deleteImage({ id }).unwrap();
-                  setRows((prev) => prev.filter((row) => row._id !== id));
+                  // setRows((prev) => prev.filter((row) => row._id !== id));
                   toast.success("Image deleted successfully");
                 } catch (err) {
                   toast.error("Failed to delete image");

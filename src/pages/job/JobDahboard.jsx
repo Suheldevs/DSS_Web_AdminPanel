@@ -31,7 +31,7 @@ function JobDashboard() {
               onClick={async () => {
                 try {
                   await deleteJob({ id }).unwrap();
-                  setRows((prev) => prev.filter((row) => row._id !== id));
+                  // setRows((prev) => prev.filter((row) => row._id !== id));
                   toast.success("Job Application deleted successfully");
                 } catch (err) {
                   toast.error("Failed to delete application");
