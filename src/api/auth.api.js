@@ -13,8 +13,23 @@ export const authApi = createApi({
         data: formData,
       }),
     }),
+
+    dashboard: builder.query({
+      query: () => ({
+        url: `/dashboard`,
+        method: "GET"
+      }),
+    }),
+
+    announcement: builder.mutation({
+      query: ({formData}) => ({
+        url: `/news-latter/send`,
+        method: "POST",
+        data:formData
+      }),
+    }),
 })
 })
 export const {
-useLoginMutation
+useLoginMutation , useDashboardQuery , useAnnouncementMutation
 } = authApi;

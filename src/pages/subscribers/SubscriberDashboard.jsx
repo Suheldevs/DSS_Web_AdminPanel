@@ -131,7 +131,7 @@ console.log(data)
 
   return (
     <div>
-      <PageHeader title="Subscribers Dashboard" />
+      <PageHeader title="Subscribers Dashboard" btnTitle="New Announcement" path="/subscriber/announcement" />
       <Table data={rows} columnConfig={subscriberColumnConfig} />
     </div>
   );

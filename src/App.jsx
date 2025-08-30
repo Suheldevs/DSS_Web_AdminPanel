@@ -18,6 +18,7 @@ import TeamForm from "./pages/team/TeamForm";
 import VisitorDashboard from "./pages/visitor/VisitorDashboard";
 import SubscriberDashboard from "./pages/subscribers/SubscriberDashboard";
 import JobDashboard from "./pages/job/JobDahboard";
+import AnnouncementForm from "./pages/subscribers/AnnouncementForm";
 function App() {
   return (
     <>
@@ -41,6 +42,7 @@ function App() {
       <Route path="/inquiry" element={<InquiryDashboard/>}/>
       <Route path="/visitor" element={<VisitorDashboard/>}/>
       <Route path="/subscriber" element={<SubscriberDashboard/>}/>
+      <Route path="/subscriber/announcement" element={<AnnouncementForm/>}/>
       <Route path="/job-application" element={<JobDashboard/>}/>
       </Route>
     </Routes>
